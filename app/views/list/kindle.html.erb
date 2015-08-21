@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>kindle</h1>
+</div>
+
+<div class="row margin-top-sm">
+  <% @books.each do |book| %>
+    <div class="magring-top-md col-sm-4 text-center">
+      <p><%= book.name %></font></p>
+      <p>
+          <% book.authors.each do |author|  %>
+          <%= author.name %>
+          <% end %>
+      </p>
+      <%= link_to image_tag(book.link_pic), book.link_str %>
+      <p>発売日<%= book.published_on %></p>
+      <p><%= book.price %>円</p>
+      <br><br>
+    </div>
+  <% end %>
+  <footer>
+    <Center><%= paginate @books %></Center>
+  </footer>
+</div>

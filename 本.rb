@@ -1,0 +1,32 @@
+require 'active_record'
+ActiveRecord::Base.establish_connection(
+  "adapter"=>"sqlite3",
+  "database"=>"db/development.sqlite3"
+)
+class Book<ActiveRecord::Base
+end
+
+#Book.create name: "最強デジタル麻雀", published_on: "2009-3-25", price: 1512, link_str: "http://www.amazon.co.jp/gp/product/4839931100/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839931100&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839931100&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "最強デジタル麻雀 実戦問題集", published_on: "2009-11-25", price: 1512 ,link_str: "http://www.amazon.co.jp/gp/product/4839933979/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839933979&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839933979&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "シンプルに勝つ! 最強小倉システム", published_on: '2012-11-13', price: 1512, link_str: "http://www.amazon.co.jp/gp/product/4839944903/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839944903&linkCode=as2&tag=12katsuyan-22",  link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839944903&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "麻雀 魔神の読み", published_on: "2012-9-13", price: 1512 ,link_str: "http://www.amazon.co.jp/gp/product/4839944466/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839944466&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839944466&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "麻雀 魔神の攻め", published_on: "2013-3-13", price: 1512 ,link_str: "http://www.amazon.co.jp/gp/product/4839946558/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839946558&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839946558&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "麻雀 魔神の実戦", published_on: "2013-9-13", price: 1512 ,link_str: "http://www.amazon.co.jp/gp/product/4839948593/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839948593&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839948593&Format=_SL110_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "多井隆晴の最新麻雀戦術", published_on: "2010-2-25", price: 1512 ,link_str: "http://www.amazon.co.jp/gp/product/4839934436/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839934436&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839934436&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "多井隆晴の最速最強麻雀", published_on: "2006-5-25", price: 1449  ,link_str: "http://www.amazon.co.jp/gp/product/4839920826/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839920826&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839920826&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "河野高志の麻雀 勝つならこう打て! ", published_on: "2006-6-19", price: 1449 ,link_str: "http://www.amazon.co.jp/gp/product/4839921075/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839921075&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839921075&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "麻雀押し引きの戦術 ", published_on: "2010-1-26", price: 1512  ,link_str: "http://www.amazon.co.jp/gp/product/483993407X/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=483993407X&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=483993407X&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "最強麻雀 リーチの絶対感覚", published_on: "2012-3-13", price: 1512 ,link_str: "http://www.amazon.co.jp/gp/product/4839942145/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4839942145&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4839942145&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "麻雀最強の戦術50", published_on: "2012-6-15", price: 1404 ,link_str: "http://www.amazon.co.jp/gp/product/4780411602/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4780411602&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4780411602&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+=begin
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+Book.create name: "", published_on: "", price: ,link_str: "", link_pic: ""
+#Book.create name: "勝つための現代麻雀技術論", published_on: "2014-4-9", price: 1296 ,link_str: "http://www.amazon.co.jp/gp/product/4800303109/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4800303109&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4800303109&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+#Book.create name: "もっと勝つための現代麻雀技術論 実戦編", published_on: "2014-11-5", price: 1296 ,link_str: "http://www.amazon.co.jp/gp/product/4800304660/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4800304660&linkCode=as2&tag=12katsuyan-22", link_pic: "http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4800304660&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=12katsuyan-22"
+=end
